@@ -1,0 +1,12 @@
+#Configuracion del servidor de registro(Eureka)
+server: 
+   port: 1111
+
+
+#Configuracion para administrar los logs 
+   logging:
+           file: logs/${spring.application.name}.log
+           level:
+                   com.netflix.discovery: 'OFF'
+                   org.springframework.cloud: 'DEBUG'
+                   com.microservicios: 'DEBUG'
